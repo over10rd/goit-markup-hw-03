@@ -74,8 +74,10 @@ header {
     padding-bottom: 24px;
 }
 
-.footer-logo {
-    color: var(--footerlogo-bcg-color);
+
+
+.navigat {
+    margin-left: 76px;
 }
 
 .menu-list {
@@ -85,18 +87,22 @@ header {
     letter-spacing: 0.02em;
     color: var(--main-text-color);
     display: flex;
-    margin-left: 76px;
+
 }
 
 .menu-link {
     color: var(--main-text-color);
     display: block;
-    margin-right: 40px;
+
 }
 
 .menu-link:hover,
 .menu-link:focus {
     color: var(--hover-focus-color);
+}
+
+.menu-items {
+    margin-right: 40px;
 }
 
 .contact {
@@ -173,20 +179,22 @@ header {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    margin-bottom: 8px;
 }
 
 .text {
+    color: var(--link-color);
     font-size: 16px;
     line-height: 1.5;
-    margin-top: 8px;
 }
 
 .section-title {
+    margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
-    margin-bottom: 60px;
+
 }
 
 .section {
@@ -194,27 +202,22 @@ header {
     padding-bottom: 120px;
 }
 
-.quality-list {
+.quality-list,
+.specializ-list,
+.team-list {
     display: flex;
     gap: 24px;
 }
 
 .quality-items {
-    flex-basis: calc((100% - 24px)/4);
+    flex-basis: calc((100% - 3 * 24px)/4);
 }
 
-.quality-title {
-    margin-bottom: 8px;
-}
 
-.specialization {
+.specializ {
     padding-top: 0;
 }
 
-.specialization-list {
-    display: flex;
-    gap: 24px;
-}
 
 
 /* team */
@@ -230,19 +233,12 @@ header {
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-list {
-    display: flex;
-    gap: 24px;
-}
 
 .wrap {
     padding: 32px 0;
     text-align: center;
 }
 
-.team-text {
-    margin-top: 8px;
-}
 
 /* footer */
 
@@ -254,23 +250,16 @@ header {
 }
 
 .footer-text {
-    color: var(--white-color);
+    color: var(--filter-btn);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 264px;
-
+    margin-top: 16px;
 }
 
-.logo-foot {
-    font-family: "Raleway", sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.33;
-    color: var(--logo-btn-color);
-    text-transform: uppercase;
-    margin-bottom: 16px;
-    display: block;
+.footer-logo {
+    color: var(--footerlogo-bcg-color);
 }
 
 /* portfolio*/
